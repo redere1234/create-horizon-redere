@@ -6,6 +6,7 @@ import shutil
 import subprocess
 import tempfile
 from common import ROOT, NATIVE
+from manifest import native_manifest_bytes
 
 
 def main():
@@ -37,7 +38,7 @@ def main():
     # directory or input JARs. The published GitHub source has the same layout.
     with tempfile.TemporaryDirectory(prefix="create-native-source-") as temporary:
         source = Path(temporary)
-        shutil.copy2(ROOT / "horizon-native.json", source / "horizon-native.json")
+        (source / "horizon-native.json").write_bytes(native_manifest_bytes())
         shutil.copytree(NATIVE, source / "mixins/create",
                         ignore=shutil.ignore_patterns("target", "Cargo.lock", "__pycache__", "*.pyc"))
         subprocess.run([*command, str(source)], check=True)

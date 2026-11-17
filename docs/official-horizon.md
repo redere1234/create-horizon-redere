@@ -44,8 +44,9 @@ not change the native mod interface. [Horizon #11143](https://github.com/horizon
 2. Run the native client in a fresh instance. Check fallback assets, then
    repeat with a local Create 6.0.10 JAR. Test placement and Pick Block,
    Basin and Mixer, Blaze Burner, the fan, and moving structure save and reload.
-3. Set the same official commit in `compatibility.json`, `horizon-native.json`
-   and `mixins/create/horizon-mixin.toml`. Build the package, check its pins and
+3. Set the same official commit in `compatibility.json` and
+   `mixins/create/horizon-mixin.toml`. The packager generates
+   `horizon-native.json` inside the `.hnmod`; build the package, check its pins and
    install it through the unmodified Launcher before updating the registry.
 
 Launcher and registry compatibility require a clean installation against the

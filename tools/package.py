@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import zipfile
 from common import ROOT, NATIVE, PINS, check_horizon
+from manifest import native_manifest, native_manifest_bytes
 
 
 def main():
@@ -19,10 +20,8 @@ def main():
     subprocess.run([str(cli), "build"], cwd=ROOT / "content", check=True)
     destination = ROOT / "dist"
     destination.mkdir(parents=True, exist_ok=True)
-    manifest = json.loads((ROOT / "horizon-native.json").read_text())
-    if (manifest["horizon"], manifest["mixins"]) != (PINS["horizon_revision"], PINS["horizon_mixins_revision"]):
-        raise SystemExit("horizon-native.json differs from compatibility.json")
-    native_files = {"horizon-native.json": (json.dumps(manifest, indent=2) + "\n").encode()}
+    manifest = native_manifest()
+    native_files = {"horizon-native.json": native_manifest_bytes()}
     for path in sorted(NATIVE.rglob("*")):
         if path.is_file() and (path.suffix in [".rs", ".toml"] or "data" in path.relative_to(NATIVE).parts):
             native_files["mixins/create/" + path.relative_to(NATIVE).as_posix()] = path.read_bytes()

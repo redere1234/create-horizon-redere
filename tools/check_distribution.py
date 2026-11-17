@@ -4,6 +4,7 @@ import json
 import re
 from zipfile import ZipFile
 from common import ROOT, NATIVE, PINS
+from manifest import native_manifest
 from fallback_textures import texture_path
 from catalog import (
     BLOCKS, EXTRA_MODELS, HIDDEN_CREATIVE_ITEMS, INTERNAL_BLOCKS, ITEMS,
@@ -12,7 +13,7 @@ from catalog import (
 
 
 def main():
-    manifest = json.loads((ROOT / "horizon-native.json").read_text())
+    manifest = native_manifest()
     assert manifest["horizon"] == PINS["horizon_revision"], "Horizon pin differs"
     assert manifest["mixins"] == PINS["horizon_mixins_revision"], "Mixins pin differs"
     assert manifest["id"] == "create", "Native namespace differs"
