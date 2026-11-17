@@ -13,8 +13,8 @@ currently share one chunk column.
 [Contraption guide](contraptions.md)
 
 The sections marked 0.3–0.5 below retain the released historical boundaries.
-The installed review checkpoint is **0.6.0-alpha.2**: see [REPORT_06.md](https://github.com/Delete228/create-horizon/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/REPORT_06.md)
-and [DEVELOPMENT_06.md](https://github.com/Delete228/create-horizon/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/DEVELOPMENT_06.md) for scoped integration evidence and
+The installed review checkpoint is **0.6.0-alpha.2**: see [REPORT_06.md](https://github.com/redere1234/create-horizon-redere/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/REPORT_06.md)
+and [DEVELOPMENT_06.md](https://github.com/redere1234/create-horizon-redere/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/DEVELOPMENT_06.md) for scoped integration evidence and
 remaining differences. It adds limited schematic placement, bare-belt transport,
 Basin/Mixer/fluid/heat processing and Press compacting, not complete Create parity.
 

@@ -26,9 +26,13 @@ def main():
     for path in sorted(NATIVE.rglob("*")):
         if path.is_file() and (path.suffix in [".rs", ".toml"] or "data" in path.relative_to(NATIVE).parts):
             native_files["mixins/create/" + path.relative_to(NATIVE).as_posix()] = path.read_bytes()
-    for name in ["LICENSE", "THIRD_PARTY_NOTICES.md"]:
-        # NOTICE* is an allowed native bundle text file.
-        native_files["mixins/create/" + ("NOTICE.md" if name.endswith(".md") else name)] = (ROOT / name).read_bytes()
+    for name in ["LICENSE", "THIRD_PARTY_NOTICES.md", "AUTHORS.md"]:
+        # NOTICE* and AUTHORS.md are allowed native bundle text files.
+        bundle_name = {
+            "THIRD_PARTY_NOTICES.md": "NOTICE.md",
+            "AUTHORS.md": "AUTHORS.md",
+        }.get(name, name)
+        native_files["mixins/create/" + bundle_name] = (ROOT / name).read_bytes()
     content_archive = ROOT / "content/target/horizon-mod/create.hmod"
     with zipfile.ZipFile(content_archive) as package:
         content_files = {name: package.read(name) for name in package.namelist() if not name.endswith("/")}

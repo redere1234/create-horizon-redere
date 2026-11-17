@@ -1,8 +1,8 @@
 id = "create"
-name = "Create for Horizon"
+name = "Create for Horizon — Redere Edition"
 version = "0.11.1"
-description = "Build rotating machines and small factories in Horizon. The original Create JAR is optional and supplies its models and textures."
-authors = ["create-horizon contributors"]
+description = "Build rotating machines and small factories in Horizon with the Redere Edition native port. The original Create JAR is optional and supplies its models and textures."
+authors = ["redere1234"]
 api = "0.2"
 side = "both"
 capabilities = ["registries"]

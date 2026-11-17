@@ -4,7 +4,7 @@
 2. Open **Mods → Add from GitHub** and paste the project URL.
 
    ```text
-   https://github.com/Delete228/create-horizon/tree/main
+   https://github.com/redere1234/create-horizon-redere/tree/main
    ```
 
 3. Open the instance's native mod build screen and select **Build**. Review the

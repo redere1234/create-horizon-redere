@@ -4,7 +4,7 @@ version = "0.11.1"
 edition = "2024"
 license = "MIT"
 publish = false
-description = "Experimental Create foundation: kinetics, pressing and item interactions"
+description = "Create for Horizon — Redere Edition native engine"
 
 [lib]
 path = "mixins/create/engine/src/lib.rs"

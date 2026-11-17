@@ -1,8 +1,8 @@
 <div align="center">
 
-# Create for Horizon
+# Create for Horizon — Redere Edition
 
-**An experimental native Rust port of Create for the Horizon runtime.**
+**A redere1234-maintained fork of the native Rust Create port for the Horizon runtime.**
 
 Gears, belts, kinetic power and moving machines — rebuilt for Horizon.
 
@@ -16,7 +16,9 @@ Gears, belts, kinetic power and moving machines — rebuilt for Horizon.
 
 ## What is this?
 
-Create for Horizon is a native implementation of Create-inspired factory mechanics for Minecraft 26.3 on the Horizon runtime. It is written in Rust and built around Horizon's APIs rather than running Java JARs directly.
+Create for Horizon — Redere Edition is a native implementation of Create-inspired factory mechanics for Minecraft 26.3 on the Horizon runtime. It is written in Rust and built around Horizon's APIs rather than running Java JARs directly.
+
+This fork is maintained by **redere1234**. Its original Horizon-native integration, compatibility updates, packaging, and documentation changes are the work of this fork's maintainer. The `create` mod namespace is intentionally preserved so existing worlds and registry references remain compatible.
 
 The goal is simple: make machines feel powerful, connected and useful — with the original Create identity intact.
 
@@ -60,7 +62,7 @@ Active and experimental. Some features are still being refined. Horizon API chan
 
 ## License
 
-MIT for this port's code. Create's original code, art and audio remain credited to their authors and are subject to their original terms. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
+MIT for the fork's original code and modifications. Create's original code, art and audio remain credited to their authors and are subject to their original terms. See [AUTHORS.md](AUTHORS.md), [LICENSE](LICENSE), and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
 
 ---
 

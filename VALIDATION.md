@@ -717,8 +717,8 @@ Evidence: `.local/final-port-checks.json`,
 `.local/final-performance-check-ejbjii2j/result.json` and separate image review,
 `.local/final-user-install-result.json`. Failed fixture attempts are retained.
 
-The route and known differences are in [TESTING_06.md](https://github.com/Delete228/create-horizon/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/TESTING_06.md),
-[REPORT_06.md](https://github.com/Delete228/create-horizon/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/REPORT_06.md) and [DEVELOPMENT_06.md](https://github.com/Delete228/create-horizon/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/DEVELOPMENT_06.md).
+The route and known differences are in [TESTING_06.md](https://github.com/redere1234/create-horizon-redere/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/TESTING_06.md),
+[REPORT_06.md](https://github.com/redere1234/create-horizon-redere/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/REPORT_06.md) and [DEVELOPMENT_06.md](https://github.com/redere1234/create-horizon-redere/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/DEVELOPMENT_06.md).
 The entries below describe earlier binaries and are not silently transferred
 to this checkpoint.
 
@@ -785,7 +785,7 @@ four airflows with eight outputs each, drill with one new cobblestone,
 five crafts through the actual menu, and empty-bucket return. Seven gameplay
 screenshots were viewed. Checks ran on a copy: `final-integrity.json` confirms
 that all 29 source-map files are unchanged. The user walkthrough is in
-[TESTING_05.md](https://github.com/Delete228/create-horizon/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/TESTING_05.md).
+[TESTING_05.md](https://github.com/redere1234/create-horizon-redere/blob/eb8b96e8ea1db698b79bb61fd1caf6c963f31652/TESTING_05.md).
 
 The standard **Add from GitHub** installed the published source commit
 `16c5d454b1b9860da01b78474ea5206f0664d384` into a new empty test instance.
@@ -796,7 +796,7 @@ the final newline. SHA-256 of the local `.hnmod`:
 `f49534cc3d558eb6baca9b1479e48a8c1d2a33031b098c5fa037fa1c4d4e0c49`.
 SHA-256 of the GitHub archive installed by the Launcher:
 `6e88ee5b86f21fd756b09e8d9511516896d5cb4e2051214fbb73577ac2aa53f5`.
-[Source-commit CI](https://github.com/Delete228/create-horizon/actions/runs/41732420020)
+[Source-commit CI](https://github.com/redere1234/create-horizon-redere/actions/runs/41732420020)
 passed, including all eight Java oracles.
 
 The mod was also installed into the user's **Create Processing 0.5** using the
@@ -902,7 +902,7 @@ Local evidence: `.local/foundation-unit.log`, `.local/foundation-clippy.log`,
 repository; local game assets and results are not in Git.
 
 Source package `12d83a0233317484b697292af0c7623ced074ec9` was published;
-[CI](https://github.com/Delete228/create-horizon/actions/runs/41701109989) passed
+[CI](https://github.com/redere1234/create-horizon-redere/actions/runs/41701109989) passed
 all stages, including four Java oracles. Native archive SHA-256:
 `0dd5758a7db5e7955b295e881f8ebe51a24f01a947e4d7c809e546f0bd8b086d`.
 
@@ -948,7 +948,7 @@ switched: tools read pinned files through Git.
 
 | Check | Result and scope |
 | --- | --- |
-| Rust and CI | 24 tests (14 core, 10 importer), formatting, package contract, and Clippy passed. [Source-package CI](https://github.com/Delete228/create-horizon/actions/runs/41687537157) passed. [Next CI](https://github.com/Delete228/create-horizon/actions/runs/41688429604) also ran both Java oracles successfully on JDK 25. |
+| Rust and CI | 24 tests (14 core, 10 importer), formatting, package contract, and Clippy passed. [Source-package CI](https://github.com/redere1234/create-horizon-redere/actions/runs/41687537157) passed. [Next CI](https://github.com/redere1234/create-horizon-redere/actions/runs/41688429604) also ran both Java oracles successfully on JDK 25. |
 | Placement versus Java | 27 648 combinations for shaft, cogs, and motor matched the AST-extracted original methods. Context, neighboring ports, and Minecraft types use adapters. |
 | Stress versus Java | 75 scenarios again matched unchanged `KineticNetwork.java` from the same release. This is not a complete graph/NeoForge check. |
 | In-game placement | 12 scenarios: X/Y/Z axes, adjacent shaft, Shift, inherited cog axis, motor, and horizontal press. |
@@ -1011,7 +1011,7 @@ Exact commits and versions are listed in [compatibility.json](compatibility.json
 ## Standard GitHub installation (3 November 2026)
 
 Source package at commit `73a9ccba62f619c4a7d0288a7d42c1146a3a8f52` was checked.
-[CI for this commit](https://github.com/Delete228/create-horizon/actions/runs/41677935703)
+[CI for this commit](https://github.com/redere1234/create-horizon-redere/actions/runs/41677935703)
 passed: formatting, 21 Rust tests, source-installation contract, and Clippy.
 
 - Unmodified installed Horizon Launcher **0.2.37** built the client with standard
