@@ -1,14 +1,18 @@
 # Official Horizon compatibility
 
-Create 0.11.1 builds on the unmodified official Horizon commit `fdc87ae`
-with Minecraft 26.3 resources. It was built with the pinned Horizon Mixins
-tool. The native client loaded both resource sets, restored a lit Blaze
-Burner after restart, and matched the Java reference across 460 ticks of
-Precision Mechanism assembly, including a restart after operation seven.
-[Pinned source](https://github.com/horizon-rust/horizon/commit/fdc87ae)
+Create 0.11.1 now targets the unmodified official Horizon nightly commit
+`9f42064` with Minecraft 26.3 resources. The compatibility metadata also pins
+the current Horizon Mixins revision used by the native-mod toolchain. The
+previous full native-client evidence remains recorded below in the review
+reports; the new pin has passed metadata, distribution, target-file and
+helper-source checks, while a complete native client build still needs to run
+on a supported x86_64 Rust toolchain.
+[Pinned source](https://github.com/horizon-rust/horizon/commit/9f42064)
 
-The supported launcher target is the official Horizon nightly `fdc87ae`. This compatibility profile avoids hooks introduced after that nightly.
-[Source](https://github.com/horizon-rust/horizon/tree/nightly-source/2026-11-08-fdc87ae)
+The supported launcher target is the official Horizon nightly `9f42064`.
+This migration keeps the existing narrow mixin targets and opts into the
+newer native-mod toolchain without changing Create gameplay code.
+[Source](https://github.com/horizon-rust/horizon/tree/nightly-source/2026-11-13-9f42064)
 
 ## Merged engine changes
 

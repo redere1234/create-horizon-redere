@@ -3,7 +3,7 @@ id = "create"
 version = "0.11.1"
 
 [compatibility]
-horizon_revision = "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca"
+horizon_revision = "9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0"
 
 [[crate]]
 id = "engine"
@@ -1144,7 +1144,7 @@ id = "apply-block-entity-pose"
 kind = "INVOKE"
 target = "horizon_client::game::native_block_entity_draw::BlockEntityDraw::apply"
 
-# fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca does not expose the stateful block-entity hooks introduced later.
+# 9f42064c11efe7ef3e5ed2baad7ddc2a3b36eea0 does not expose the stateful block-entity hooks introduced later.
 # Burner persistence remains handled by the ordinary block-entity path below.
 [[injection]]
 id = "burner-data-map-types"
